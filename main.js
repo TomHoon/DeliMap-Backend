@@ -3,6 +3,8 @@ const app = express();
 const cors = require("cors");
 const morganMiddleware = require('./src/log/morgan.js');
 
+const mailer = require('./mail');
+
 const maria = require("./maria.js");
 maria.connect();
 
@@ -19,6 +21,7 @@ app.use(morganMiddleware);
 
 // 순서 route > controller > models
 app.use('/members', require('./src/route/member.route'));
+app.use('/mail', require('./src/route/mail.route'));
 
 app.use('/uploads', express.static('uploads'));
 

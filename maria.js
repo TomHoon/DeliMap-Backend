@@ -7,11 +7,11 @@ const hostAddr = {
 }
 
 const conn = maria.createConnection({
-    host : hostAddr.운영,
+    host : hostAddr.내부망,
     port : 13306,
     user:'root',
     password:'1234',
-    database: 'delimap'
+    database: 'todayworkout'
 });
 
 module.exports = conn;
