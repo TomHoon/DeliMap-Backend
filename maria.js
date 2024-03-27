@@ -11,7 +11,7 @@ const conn = maria.createConnection({
     port : 13306,
     user:'root',
     password:'1234',
-    database: 'todayworkout'
+    database: 'delimap'
 });
 
 module.exports = conn;

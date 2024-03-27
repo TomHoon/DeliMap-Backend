@@ -1,8 +1,6 @@
 const nodemailer = require('nodemailer');
 const senderInfo = require('./email.json');
 
-console.log('>>>> senderInfo ', senderInfo);
-
 // 메일발송 객체
 const mailSender = {
   // 메일발송 함수

@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const morganMiddleware = require('./src/log/morgan.js');
 
-const mailer = require('./mail');
+// const mailer = require('./mail');
 
 const maria = require("./maria.js");
 maria.connect();
